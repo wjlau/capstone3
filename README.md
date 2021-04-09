@@ -5,3 +5,6 @@
 * Problem I'm trying to solve: As I've mentioned before, I'm not an avid basketball fan, but I'm also not totally indifferent - and as someone who suffers from FOMO, I've tried playing along one year and had joined their fantasy basketball league. Little did I know, I was using up an important spot for a rookie who had barely even played before simply because his hair looked cool and whatever "stats" he had looked good enough to me. And of course for those basketball players that I did know, they were clearly the stars of their team and were in high demand - so who am I to pick? For this project, I would like to use clustering to find similar players in order to produce fantasy basketball player tiers. 
 * Data: [https://www.basketball-reference.com/](https://www.basketball-reference.com/)
 
+## Recipes
+* Not quite sure what I want to do here but would be interested in working on something recipes related? Some recipes have tags - not sure what I could do with that.
+* Data: [Epicurious](https://www.epicurious.com/recipes/food/views/grilled-carrots-with-cumin-serrano-yogurt)
