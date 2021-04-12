@@ -6,5 +6,5 @@
 * Data: [https://www.basketball-reference.com/](https://www.basketball-reference.com/)
 
 ## Recipes
-* Not quite sure what I want to do here but would be interested in working on something recipes related? Some recipes have tags - not sure what I could do with that.
-* Data: [Epicurious](https://www.epicurious.com/recipes/food/views/grilled-carrots-with-cumin-serrano-yogurt)
+* I love cooking and I love traveling - a perfect blend of both is the different cuisines the world has to offer (this is probably the best we can do given the pandemic). I would like to do something related to nlp and recipes - perhaps categorizing cuisines with NLP
+* Not sure what data to use but I have looked for websites with tags. i.e. [Epicurious](https://www.epicurious.com/recipes/food/views/grilled-carrots-with-cumin-serrano-yogurt)
