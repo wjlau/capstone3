@@ -23,6 +23,8 @@ Since the data contains all NBA basketball players thus far, that means my data 
 
 My first pass at a model, I knew I wanted to look at the 5 main stats. As you can see for points, there is not much different position by position. However, we see serious differences in a few categories such as total rebounds and assists. This gives a good idea about what to expect in the model, especially in terms of what the model deems to be the most important features to help determine a player's position. 
 
+![](img/all_stats.png)
+
 ## Models and Considerations 
 The models that I had used were random forest and logistic regression. 
 With logistic regression being the best model. After choosing features based on Gini Importance and trying a few different combination of features, our best model was a logistic regression with 65.9% accuracy. I decided to use accuracy as my evalution metric since in this case we aren't particular concerned more about either false positive or false negative  - in this case their both have similar costs. The parameters were max_iter = 1000 and C = 250. This is having dropped NaNs and changing 3 pointers to 0 where there were NaNs (prior to 1979, 3 pointers were not a thing!). However, given that seeing a break down of NaNs by feature - I noticed that were a lot of NaNs and thus we were dropping a significant amount of data. Having dropped NaNs, we were only considering 3023 players (dropped ~16% of data). With that being said, I compared this model to one where I used KNN imputer to fill out NaNs and results were not bad at 63.9% accuracy considering that allows us to use our whole dataset (which is already small to begin with).
@@ -35,6 +37,10 @@ Across all the different models, the models were misclassifying in very similar 
 Our roc curves across all the different models were also similar in that Small Forwards and Point Guards tend to do the worse - this also makes sense since those tends to be the more versatile players. 
 
 ![](img/roc_curve.png)
+
+As you can see our model does a good job at distinguishing between "bigger" players and "smaller" players, however within those categories that is where my model is having a difficult time making the distinctions. 
+
+![](img/actual_v_predicted.png)
 
 For possible next steps, I'd love to:<br/>
 Incorporate more advanced stats (i.e. FGA by distance, dunks, corner 3s etc.) to see what are the defining features for the different positions and try to improve my model in the areas where it was getting confused and misclassifying<br/>
